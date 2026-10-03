@@ -8,7 +8,7 @@ An **End-to-End Data Analytics Project** transforming raw transactional e-commer
 
 ## 📽️ Interactive Demo
 
-![Dashboard Interactive Demo](dashboard_demo.gif)
+![Dashboard Interactive Demo](Record_2026_10_03_16_19_36_427-ezgif.com-video-to-gif-converter.gif)
 
 ---
 
