@@ -36,30 +36,30 @@ This project addresses the need for actionable business intelligence within an i
 
 The data model was structured following best dimensional modeling practices to maximize report performance and dynamic filtering:
 
-+-------------------+             +-------------------+
-  |   dim_clientes    |             |   dim_productos   |
-  +-------------------+             +-------------------+
-  | cliente_id (PK)   |             | producto_id (PK)  |
-  | nombre            |             | nombre_producto   |
-  | pais              |             | categoria         |
-  +---------+---------+             +---------+---------+
-            |                                 |
-            | 1                               | 1
-            |                                 |
-            +----------------+----------------+
-                             |
-                             | *
-                    +--------+--------+
-                    |   fact_ventas   |
-                    +-----------------+
-                    | venta_id (PK)   |
-                    | cliente_id (FK) |
-                    | producto_id (FK)|
-                    | fecha           |
-                    | monto           |
-                    +-----------------+
-
----
+```text
+      +-------------------+             +-------------------+
+      |   dim_clientes    |             |   dim_productos   |
+      +-------------------+             +-------------------+
+      | cliente_id (PK)   |             | producto_id (PK)  |
+      | nombre            |             | nombre_producto   |
+      | pais              |             | categoria         |
+      +---------+---------+             +---------+---------+
+                |                                 |
+                | 1                               | 1
+                |                                 |
+                +----------------+----------------+
+                                 |
+                                 | *
+                        +--------+--------+
+                        |   fact_ventas   |
+                        +-----------------+
+                        | venta_id (PK)   |
+                        | cliente_id (FK) |
+                        | producto_id (FK)|
+                        | fecha           |
+                        | monto           |
+                        +-----------------+
+```
 
 ## 📊 Business Logic & DAX Measures
 
